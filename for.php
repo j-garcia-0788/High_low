@@ -2,13 +2,13 @@
 
 ($argc == 2);
 
-fwrite(STDOUT, 'Enter a starting a number ');
+fwrite(STDOUT, "Enter a minimum a number. \n");
 	$starting = trim(fgets(STDIN)); 
 
-fwrite(STDOUT, 'Enter an ending number ');
+fwrite(STDOUT, "Enter an maximum number. \n");
 	$ending = trim(fgets(STDIN));
 
-fwrite(STDOUT, 'Enter incrementation ');
+fwrite(STDOUT, 'Enter incrementation. ');
 	$count = trim(fgets(STDIN));
 
 for ($i = $starting; $i <= $ending; $i += $count) {
