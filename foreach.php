@@ -10,7 +10,9 @@ foreach ($things as $thing) {
     } else if (is_bool($thing)) {
         echo "\n";
     } else if (is_array($thing)) {
-        echo "{$thing} is an array\n";
+        foreach ($thing as $number) {
+        	echo "{$number}\n";
+        }	
     } else if (is_null($thing)) {
         echo "\n";
     } else if (is_string($thing)) {
