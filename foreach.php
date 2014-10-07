@@ -17,7 +17,11 @@ foreach ($things as $thing) {
         echo "\n";
     } else if (is_string($thing)) {
         echo "{$thing} is a string\n";
+    }
+} foreach ($things as $thing) {
+	if (is_bool($thing)) {
+        echo "\n";
     } else if (is_scalar($thing)) {
-        echo "{$thing} is a float, integer, string, or boolean\n";
+    	echo "{$thing} is scalar\n";
     }
 }
